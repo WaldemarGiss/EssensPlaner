@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wo/Was essen wir denn heute?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div>
+    <h1>Wo/Was essen wir denn heute?</h1>
+    <div>
+        <h3>Kategorien / Filter</h3>
+        <form action="get.php" method="post">
+            <div class="conny">
+                <label for="alles" class="container">
+                    <input type="checkbox" id="alles" class="filter" name="alles" value="1" checked>
+                    <span class="checkmark">Alles</span>
+                </label>
+
+
+                <label for="hausmannskost" class="container">
+                    <input type="checkbox" id="hausmannskost" class="filter" name="hausmannskost" value="2">
+                    <span class="checkmark">Hausmannskost</span>
+                </label>
+
+                <label for="pizza" class="container">
+                    <input type="checkbox" id="pizza" class="filter" name="pizza" value="3">
+                    <span class="checkmark">Pizza/Pasta</span>
+                </label>
+
+                <label for="sonstiges" class="container">
+                    <input type="checkbox" id="sonstiges" class="filter" name="sonstiges" value="4">
+                    <span class="checkmark">Sonstiges</span>
+                </label>
+
+                <label for="asia" class="container">
+                    <input type="checkbox" id="asia" class="filter" name="asia" value="5">
+                    <span class="checkmark">Asiatisch</span>
+                </label>
+
+                <label for="burger" class="container">
+                    <input type="checkbox" id="burger" class="filter" name="burger" value="6">
+                    <span class="checkmark">Burger</span>
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <h3>Entfernung</h3>
+        <div class="conny">
+            <label for="entEgal" class="container">
+                <input type="checkbox" id="entEgal" class="entfernung" name="egal" value="3" checked>
+                <span class="checkmark">Egal</span>
+            </label>
+
+            <label for="nsw" class="container">
+                <input type="checkbox" id="nsw" class="entfernung" name="nsw" value="2">
+                <span class="checkmark">Nicht soweit weg</span>
+            </label>
+
+            <label for="nah" class="container">
+                <input type="checkbox" id="nah" class="entfernung" name="nah" value="1">
+                <span class="checkmark">Ganz nah dran</span>
+            </label>
+        </div>
+    </div>
+
+    <div>
+
+        <h3>Preis</h3>
+        <div class="conny">
+            <label for="preisEgal" class="container">
+                <input type="checkbox" id="preisEgal" class="preis" name="egal" value="3" checked>
+                <span class="checkmark">Egal</span>
+            </label>
+
+            <label for="nzv" class="container">
+                <input type="checkbox" id="nzv" class="preis" name="nzv" value="2">
+                <span class="checkmark">Nicht zu viel</span>
+            </label>
+
+            <label for="ende" class="container">
+                <input type="checkbox" id="ende" class="preis" name="ende" value="1">
+                <span class="checkmark">Ende des Monats</span>
+            </label>
+        </div>
+    </div>
+    <div>
+        <h3>Veggietauglich</h3>
+        <div class="conny">
+            <label for="veggieEgal" class="container">
+                <input type="checkbox" id="veggieEgal" class="veggietauglich" name="egal" value="3" checked>
+                <span class="checkmark">Egal</span>
+            </label>
+
+            <label for="mgls" class="container">
+                <input type="checkbox" id="mgls" class="veggietauglich" name="mgls" value="2">
+                <span class="checkmark">Muss ganz lecker sein</span>
+            </label>
+            <label for="sss" class="container">
+                <input type="checkbox" id="sss" class="veggietauglich" name="sss" value="1">
+                <span class="checkmark">sollte schon schmecken</span>
+            </label>
+        </div>
+
+    </div>
+
+    <div>
+        <button id="reset">Reset</button>
+        <button>Randomize</button>
+    </div>
+    <div class="textArea"></div>
+</div>
+
+<script src="scripts.js"></script>
+
+</html>
+

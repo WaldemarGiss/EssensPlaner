@@ -1,0 +1,119 @@
+body{
+    font-family: sans-serif;
+    color: #081108;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 22px;
+    white-space: nowrap;
+    border:1px solid black
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #626262;
+    font-size: 18px;
+
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #081108;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+/*.container input:checked ~ .checkmark:after {*/
+/*    display: block;*/
+/*}*/
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.conny {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 40%;
+
+}
+
+button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.textArea{
+    padding: 10px;
+    border-radius: 25px;
+    width: 40%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.ausgabe{
+    padding: 5px;
+}
+
+.restaurant{
+    margin-bottom: 10px;
+}
+
+.fa.fa-money{
+    color: #6d32c6;
+}
+
+.fa.fa-map-marker{
+    color: red;
+}
+.fa.fa-leaf{
+    color: forestgreen;
+}
+
